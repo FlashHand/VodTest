@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2D90B07C1DAC8EBD0083CF8F /* libnetclient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D90B07B1DAC8EBD0083CF8F /* libnetclient.a */; };
+		2D90B07E1DAC8ECA0083CF8F /* libp2pclient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D90B07D1DAC8ECA0083CF8F /* libp2pclient.a */; };
+		2DB7074B1D3E0EA2004D0EDA /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DB7074A1D3E0EA2004D0EDA /* CoreMedia.framework */; };
+		2DB7074D1D3E0EAB004D0EDA /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DB7074C1D3E0EAB004D0EDA /* AVFoundation.framework */; };
+		2DB7074F1D3E0EB0004D0EDA /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DB7074E1D3E0EB0004D0EDA /* VideoToolbox.framework */; };
+		2DDB8AEC1D3CCC9200BCCCD2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DDB8AEB1D3CCC9200BCCCD2 /* main.m */; };
+		2DDB8AEF1D3CCC9200BCCCD2 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2DDB8AEE1D3CCC9200BCCCD2 /* AppDelegate.mm */; };
+		2DDB8AF21D3CCC9200BCCCD2 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2DDB8AF11D3CCC9200BCCCD2 /* ViewController.mm */; };
+		2DDB8AF51D3CCC9200BCCCD2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DDB8AF31D3CCC9200BCCCD2 /* Main.storyboard */; };
+		2DDB8AF81D3CCC9200BCCCD2 /* vod.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2DDB8AF61D3CCC9200BCCCD2 /* vod.xcdatamodeld */; };
+		2DDB8AFA1D3CCC9200BCCCD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DDB8AF91D3CCC9200BCCCD2 /* Assets.xcassets */; };
+		2DDB8AFD1D3CCC9200BCCCD2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DDB8AFB1D3CCC9200BCCCD2 /* LaunchScreen.storyboard */; };
+		2DDB8B081D3CCC9200BCCCD2 /* vodTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DDB8B071D3CCC9200BCCCD2 /* vodTests.m */; };
+		2DDB8B131D3CCC9200BCCCD2 /* vodUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DDB8B121D3CCC9200BCCCD2 /* vodUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2DDB8B041D3CCC9200BCCCD2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2DDB8ADF1D3CCC9200BCCCD2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2DDB8AE61D3CCC9200BCCCD2;
+			remoteInfo = vod;
+		};
+		2DDB8B0F1D3CCC9200BCCCD2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2DDB8ADF1D3CCC9200BCCCD2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2DDB8AE61D3CCC9200BCCCD2;
+			remoteInfo = vod;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2D90B07B1DAC8EBD0083CF8F /* libnetclient.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libnetclient.a; sourceTree = "<group>"; };
+		2D90B07D1DAC8ECA0083CF8F /* libp2pclient.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libp2pclient.a; sourceTree = "<group>"; };
+		2DB7074A1D3E0EA2004D0EDA /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		2DB7074C1D3E0EAB004D0EDA /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		2DB7074E1D3E0EB0004D0EDA /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		2DDB8AE71D3CCC9200BCCCD2 /* vod.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vod.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DDB8AEB1D3CCC9200BCCCD2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2DDB8AED1D3CCC9200BCCCD2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2DDB8AEE1D3CCC9200BCCCD2 /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
+		2DDB8AF01D3CCC9200BCCCD2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2DDB8AF11D3CCC9200BCCCD2 /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
+		2DDB8AF41D3CCC9200BCCCD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2DDB8AF71D3CCC9200BCCCD2 /* vod.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = vod.xcdatamodel; sourceTree = "<group>"; };
+		2DDB8AF91D3CCC9200BCCCD2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2DDB8AFC1D3CCC9200BCCCD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2DDB8AFE1D3CCC9200BCCCD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DDB8B031D3CCC9200BCCCD2 /* vodTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = vodTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DDB8B071D3CCC9200BCCCD2 /* vodTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = vodTests.m; sourceTree = "<group>"; };
+		2DDB8B091D3CCC9200BCCCD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DDB8B0E1D3CCC9200BCCCD2 /* vodUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = vodUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DDB8B121D3CCC9200BCCCD2 /* vodUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = vodUITests.m; sourceTree = "<group>"; };
+		2DDB8B141D3CCC9200BCCCD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DDB8B211D3CCCC800BCCCD2 /* gkP2PClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gkP2PClient.h; sourceTree = "<group>"; };
+		2DDB8B221D3CCCC800BCCCD2 /* hsx_cfgdefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hsx_cfgdefine.h; sourceTree = "<group>"; };
+		2DDB8B251D3CCCC800BCCCD2 /* libnetclient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libnetclient.h; sourceTree = "<group>"; };
+		2DDB8B271D3CCCC800BCCCD2 /* p2p_define.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = p2p_define.h; sourceTree = "<group>"; };
+		2DDB8B2A1D3CCE5A00BCCCD2 /* hsx_netclient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hsx_netclient.h; sourceTree = "<group>"; };
+		2DDB8B2B1D3CCF9500BCCCD2 /* libnetclient_def.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libnetclient_def.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2DDB8AE41D3CCC9200BCCCD2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DB7074F1D3E0EB0004D0EDA /* VideoToolbox.framework in Frameworks */,
+				2DB7074D1D3E0EAB004D0EDA /* AVFoundation.framework in Frameworks */,
+				2DB7074B1D3E0EA2004D0EDA /* CoreMedia.framework in Frameworks */,
+				2D90B07C1DAC8EBD0083CF8F /* libnetclient.a in Frameworks */,
+				2D90B07E1DAC8ECA0083CF8F /* libp2pclient.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DDB8B001D3CCC9200BCCCD2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DDB8B0B1D3CCC9200BCCCD2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2DDB8ADE1D3CCC9200BCCCD2 = {
+			isa = PBXGroup;
+			children = (
+				2DB7074E1D3E0EB0004D0EDA /* VideoToolbox.framework */,
+				2DB7074C1D3E0EAB004D0EDA /* AVFoundation.framework */,
+				2DB7074A1D3E0EA2004D0EDA /* CoreMedia.framework */,
+				2DDB8AE91D3CCC9200BCCCD2 /* vod */,
+				2DDB8B061D3CCC9200BCCCD2 /* vodTests */,
+				2DDB8B111D3CCC9200BCCCD2 /* vodUITests */,
+				2DDB8AE81D3CCC9200BCCCD2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2DDB8AE81D3CCC9200BCCCD2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2DDB8AE71D3CCC9200BCCCD2 /* vod.app */,
+				2DDB8B031D3CCC9200BCCCD2 /* vodTests.xctest */,
+				2DDB8B0E1D3CCC9200BCCCD2 /* vodUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2DDB8AE91D3CCC9200BCCCD2 /* vod */ = {
+			isa = PBXGroup;
+			children = (
+				2DDB8B201D3CCCC800BCCCD2 /* GHBSDK */,
+				2DDB8AED1D3CCC9200BCCCD2 /* AppDelegate.h */,
+				2DDB8AEE1D3CCC9200BCCCD2 /* AppDelegate.mm */,
+				2DDB8AF01D3CCC9200BCCCD2 /* ViewController.h */,
+				2DDB8AF11D3CCC9200BCCCD2 /* ViewController.mm */,
+				2DDB8AF31D3CCC9200BCCCD2 /* Main.storyboard */,
+				2DDB8AF91D3CCC9200BCCCD2 /* Assets.xcassets */,
+				2DDB8AFB1D3CCC9200BCCCD2 /* LaunchScreen.storyboard */,
+				2DDB8AFE1D3CCC9200BCCCD2 /* Info.plist */,
+				2DDB8AF61D3CCC9200BCCCD2 /* vod.xcdatamodeld */,
+				2DDB8AEA1D3CCC9200BCCCD2 /* Supporting Files */,
+			);
+			path = vod;
+			sourceTree = "<group>";
+		};
+		2DDB8AEA1D3CCC9200BCCCD2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2DDB8AEB1D3CCC9200BCCCD2 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2DDB8B061D3CCC9200BCCCD2 /* vodTests */ = {
+			isa = PBXGroup;
+			children = (
+				2DDB8B071D3CCC9200BCCCD2 /* vodTests.m */,
+				2DDB8B091D3CCC9200BCCCD2 /* Info.plist */,
+			);
+			path = vodTests;
+			sourceTree = "<group>";
+		};
+		2DDB8B111D3CCC9200BCCCD2 /* vodUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2DDB8B121D3CCC9200BCCCD2 /* vodUITests.m */,
+				2DDB8B141D3CCC9200BCCCD2 /* Info.plist */,
+			);
+			path = vodUITests;
+			sourceTree = "<group>";
+		};
+		2DDB8B201D3CCCC800BCCCD2 /* GHBSDK */ = {
+			isa = PBXGroup;
+			children = (
+				2DDB8B2B1D3CCF9500BCCCD2 /* libnetclient_def.h */,
+				2DDB8B211D3CCCC800BCCCD2 /* gkP2PClient.h */,
+				2DDB8B221D3CCCC800BCCCD2 /* hsx_cfgdefine.h */,
+				2DDB8B2A1D3CCE5A00BCCCD2 /* hsx_netclient.h */,
+				2D90B07B1DAC8EBD0083CF8F /* libnetclient.a */,
+				2DDB8B251D3CCCC800BCCCD2 /* libnetclient.h */,
+				2D90B07D1DAC8ECA0083CF8F /* libp2pclient.a */,
+				2DDB8B271D3CCCC800BCCCD2 /* p2p_define.h */,
+			);
+			path = GHBSDK;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2DDB8AE61D3CCC9200BCCCD2 /* vod */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2DDB8B171D3CCC9200BCCCD2 /* Build configuration list for PBXNativeTarget "vod" */;
+			buildPhases = (
+				2DDB8AE31D3CCC9200BCCCD2 /* Sources */,
+				2DDB8AE41D3CCC9200BCCCD2 /* Frameworks */,
+				2DDB8AE51D3CCC9200BCCCD2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = vod;
+			productName = vod;
+			productReference = 2DDB8AE71D3CCC9200BCCCD2 /* vod.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2DDB8B021D3CCC9200BCCCD2 /* vodTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2DDB8B1A1D3CCC9200BCCCD2 /* Build configuration list for PBXNativeTarget "vodTests" */;
+			buildPhases = (
+				2DDB8AFF1D3CCC9200BCCCD2 /* Sources */,
+				2DDB8B001D3CCC9200BCCCD2 /* Frameworks */,
+				2DDB8B011D3CCC9200BCCCD2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2DDB8B051D3CCC9200BCCCD2 /* PBXTargetDependency */,
+			);
+			name = vodTests;
+			productName = vodTests;
+			productReference = 2DDB8B031D3CCC9200BCCCD2 /* vodTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2DDB8B0D1D3CCC9200BCCCD2 /* vodUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2DDB8B1D1D3CCC9200BCCCD2 /* Build configuration list for PBXNativeTarget "vodUITests" */;
+			buildPhases = (
+				2DDB8B0A1D3CCC9200BCCCD2 /* Sources */,
+				2DDB8B0B1D3CCC9200BCCCD2 /* Frameworks */,
+				2DDB8B0C1D3CCC9200BCCCD2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2DDB8B101D3CCC9200BCCCD2 /* PBXTargetDependency */,
+			);
+			name = vodUITests;
+			productName = vodUITests;
+			productReference = 2DDB8B0E1D3CCC9200BCCCD2 /* vodUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2DDB8ADF1D3CCC9200BCCCD2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = FlashHandR4L;
+				TargetAttributes = {
+					2DDB8AE61D3CCC9200BCCCD2 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 4C484JNJ85;
+					};
+					2DDB8B021D3CCC9200BCCCD2 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 2DDB8AE61D3CCC9200BCCCD2;
+					};
+					2DDB8B0D1D3CCC9200BCCCD2 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 2DDB8AE61D3CCC9200BCCCD2;
+					};
+				};
+			};
+			buildConfigurationList = 2DDB8AE21D3CCC9200BCCCD2 /* Build configuration list for PBXProject "vod" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2DDB8ADE1D3CCC9200BCCCD2;
+			productRefGroup = 2DDB8AE81D3CCC9200BCCCD2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2DDB8AE61D3CCC9200BCCCD2 /* vod */,
+				2DDB8B021D3CCC9200BCCCD2 /* vodTests */,
+				2DDB8B0D1D3CCC9200BCCCD2 /* vodUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2DDB8AE51D3CCC9200BCCCD2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DDB8AFD1D3CCC9200BCCCD2 /* LaunchScreen.storyboard in Resources */,
+				2DDB8AFA1D3CCC9200BCCCD2 /* Assets.xcassets in Resources */,
+				2DDB8AF51D3CCC9200BCCCD2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DDB8B011D3CCC9200BCCCD2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DDB8B0C1D3CCC9200BCCCD2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2DDB8AE31D3CCC9200BCCCD2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DDB8AF21D3CCC9200BCCCD2 /* ViewController.mm in Sources */,
+				2DDB8AF81D3CCC9200BCCCD2 /* vod.xcdatamodeld in Sources */,
+				2DDB8AEF1D3CCC9200BCCCD2 /* AppDelegate.mm in Sources */,
+				2DDB8AEC1D3CCC9200BCCCD2 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DDB8AFF1D3CCC9200BCCCD2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DDB8B081D3CCC9200BCCCD2 /* vodTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DDB8B0A1D3CCC9200BCCCD2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DDB8B131D3CCC9200BCCCD2 /* vodUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2DDB8B051D3CCC9200BCCCD2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2DDB8AE61D3CCC9200BCCCD2 /* vod */;
+			targetProxy = 2DDB8B041D3CCC9200BCCCD2 /* PBXContainerItemProxy */;
+		};
+		2DDB8B101D3CCC9200BCCCD2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2DDB8AE61D3CCC9200BCCCD2 /* vod */;
+			targetProxy = 2DDB8B0F1D3CCC9200BCCCD2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2DDB8AF31D3CCC9200BCCCD2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2DDB8AF41D3CCC9200BCCCD2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2DDB8AFB1D3CCC9200BCCCD2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2DDB8AFC1D3CCC9200BCCCD2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2DDB8B151D3CCC9200BCCCD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2DDB8B161D3CCC9200BCCCD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2DDB8B181D3CCC9200BCCCD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4C484JNJ85;
+				INFOPLIST_FILE = vod/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/vod/GHBSDK",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = FlashHandR4L.vod;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Debug;
+		};
+		2DDB8B191D3CCC9200BCCCD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4C484JNJ85;
+				INFOPLIST_FILE = vod/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/vod/GHBSDK",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = FlashHandR4L.vod;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Release;
+		};
+		2DDB8B1B1D3CCC9200BCCCD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = vodTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = FlashHandR4L.vodTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/vod.app/vod";
+			};
+			name = Debug;
+		};
+		2DDB8B1C1D3CCC9200BCCCD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = vodTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = FlashHandR4L.vodTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/vod.app/vod";
+			};
+			name = Release;
+		};
+		2DDB8B1E1D3CCC9200BCCCD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = vodUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = FlashHandR4L.vodUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = vod;
+			};
+			name = Debug;
+		};
+		2DDB8B1F1D3CCC9200BCCCD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = vodUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = FlashHandR4L.vodUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = vod;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2DDB8AE21D3CCC9200BCCCD2 /* Build configuration list for PBXProject "vod" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DDB8B151D3CCC9200BCCCD2 /* Debug */,
+				2DDB8B161D3CCC9200BCCCD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2DDB8B171D3CCC9200BCCCD2 /* Build configuration list for PBXNativeTarget "vod" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DDB8B181D3CCC9200BCCCD2 /* Debug */,
+				2DDB8B191D3CCC9200BCCCD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2DDB8B1A1D3CCC9200BCCCD2 /* Build configuration list for PBXNativeTarget "vodTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DDB8B1B1D3CCC9200BCCCD2 /* Debug */,
+				2DDB8B1C1D3CCC9200BCCCD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2DDB8B1D1D3CCC9200BCCCD2 /* Build configuration list for PBXNativeTarget "vodUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DDB8B1E1D3CCC9200BCCCD2 /* Debug */,
+				2DDB8B1F1D3CCC9200BCCCD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2DDB8AF61D3CCC9200BCCCD2 /* vod.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2DDB8AF71D3CCC9200BCCCD2 /* vod.xcdatamodel */,
+			);
+			currentVersion = 2DDB8AF71D3CCC9200BCCCD2 /* vod.xcdatamodel */;
+			path = vod.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 2DDB8ADF1D3CCC9200BCCCD2 /* Project object */;
+}
