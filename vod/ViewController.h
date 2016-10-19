@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
-@property CAMetalLayer *videoLayer;
+@property CALayer *videoLayer;
 -(void)receivedRawVideoFrame:(uint8_t *)frame withSize:(uint32_t)frameSize;
 @end
 
