@@ -68,7 +68,7 @@ static struct SwsContext * sws;
     
     int client=[libnetclient Network_ClientInit];
     HDEVICE l=0;
-    char addr[]="d00245217";
+    char addr[]="d00244914";
     char user[]="Admin";
     char pwd[]="100688";
     int code=[libnetclient Network_ClientLogin:&l addr:addr port:6001 user:user pwd:pwd];
@@ -115,13 +115,10 @@ static int CALLBACK ReadDatacbf(HLIVE hStream, BYTE *pDataBuf, DWORD dwDataLen, 
     avpkt.data=body;
    int len = avcodec_decode_video2(c, codec_frame, &got_picture, &avpkt);
     if (len < 0) {
-//        fprintf(stderr, "Error while decoding frame %d\n", codec_frame);
         NSLog(@"错了");
         return ;
     }
     char *buf = (char *)malloc(codec_frame->width * codec_frame->height * 3 / 2);
-//
-//    int w, h, i;
     char *y, *u, *v;
     y = buf;
     u = y + width * height;
@@ -130,49 +127,8 @@ static int CALLBACK ReadDatacbf(HLIVE hStream, BYTE *pDataBuf, DWORD dwDataLen, 
     memcpy(y , codec_frame->data[0], width * height);
     memcpy(u , codec_frame->data[1] , width * height / 4);
     memcpy(v , codec_frame->data[2] , width * height / 4);
-//
-//    
-//    NSMutableData *y=[[NSMutableData alloc]initWithBytes:codec_frame->data[0] length:width*height];
-//    [y appendBytes:codec_frame->data[1] length:width*height / 4];
-//    [y appendBytes:codec_frame->data[2] length:width*height / 4];
     [glView displayYUV420pData:buf width:1280 height:720];
         free(buf);
-
-
-//    AVPicture pic,yuv;
-//    avpicture_alloc(&pic,AV_PIX_FMT_RGB32,1280,720);
-//    avpicture_fill(&yuv,codec_frame->data,PIX_FMT_YUV420P,width,height);
-//
-//    sws_scale(sws, yuv.data, yuv.linesize, 0, height, pic.data, pic.linesize);
-//    CVPixelBufferRef pixelBuffer=[self yuvPixelBufferWithData:codec_frame->data width:1280 heigth:720];
-//    
-//    CIImage *ciImage = [[CIImage alloc] initWithCVPixelBuffer:pixelBuffer];
-//
-//    UIImage *image= [UIImage imageWithCIImage:ciImage];//:newImage scale:1.0  orientation:UIImageOrientationRight];
-    
-//    CGContextRef context = CGBitmapContextCreate(NULL,
-//                                                 (*header).width,
-//                                                 (*header).height,
-//                                                 8,
-//                                                 (*header).width*4,
-//                                                 colorSpace,
-//                                                 bitmapInfo);
-//    size_t bufferLength = width * height * 3;
-//    CGDataProviderRef provider = CGDataProviderCreateWithData(NULL, pic.data, bufferLength, NULL);
-////
-//    CGImageRef iref = CGImageCreate(width,
-//                                    height,
-//                                    8,
-//                                    24,
-//                                    width*3,
-//                                    colorSpace,
-//                                    bitmapInfo, 
-//                                    provider,
-//                                    NULL,
-//                                    NO,
-//                                    renderingIntent);
-//    [_videoLayer setContents:(__bridge id)image.CGImage];
-//    CGDataProviderRelease(provider);
     
     free(body_part);
     free(header_part);
